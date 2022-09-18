@@ -1,0 +1,32 @@
+{
+    "name": "typescript-training",
+    "version": "1.0.0",
+    "description": "Project for practicing TypeScript",
+    "main": "changeme.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/b3nThomas/typescript-training.git"
+    },
+    "keywords": [
+        "typescript",
+        "node"
+    ],
+    "author": "b3nThomas",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/b3nThomas/typescript-training/issues"
+    },
+    "homepage": "https://github.com/b3nThomas/typescript-training#readme",
+    "devDependencies": {
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1",
+        "typescript": "^4.8.3"
+    },
+    "lint-staged": {
+        "*": "prettier --write"
+    }
+}
