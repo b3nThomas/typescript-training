@@ -7,7 +7,7 @@ type Bird = AnimalBaseProps<{
     __group: 'Bird';
     canSwim: boolean;
     hasTeeth: false;
-    /* Bespoke props */
+    /* Additional props */
     canFly: boolean; // Penguins can't
 }>;
 
@@ -16,7 +16,7 @@ type Fish = AnimalBaseProps<{
     __group: 'Fish';
     canSwim: true;
     hasTeeth: boolean;
-    /* Bespoke props */
+    /* Additional props */
     canBreathUnderwater: true;
 }>;
 
@@ -25,7 +25,7 @@ type Mammal = AnimalBaseProps<{
     __group: 'Mammal';
     canSwim: boolean; // Tortoises can't
     hasTeeth: boolean;
-    /* Bespoke props */
+    /* Additional props */
     canBreathUnderwater: false;
     legCount: number;
 }>;
