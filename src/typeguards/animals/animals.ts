@@ -1,5 +1,12 @@
 import { Animal, Bird, Fish, Mammal } from './types';
 
+export const albatross: Bird = {
+    __group: 'Bird',
+    displayName: 'albatross',
+    canFly: true,
+    canSwim: false,
+};
+
 export const penguin: Bird = {
     __group: 'Bird',
     displayName: 'penguin',
@@ -7,22 +14,15 @@ export const penguin: Bird = {
     canSwim: true,
 };
 
-export const albatros: Bird = {
-    __group: 'Bird',
-    displayName: 'albatros',
-    canFly: true,
-    canSwim: false,
+export const goldfish: Fish = {
+    __group: 'Fish',
+    displayName: 'goldfish',
+    canSwim: true,
 };
 
 export const shark: Fish = {
     __group: 'Fish',
     displayName: 'shark',
-    canSwim: true,
-};
-
-export const goldfish: Fish = {
-    __group: 'Fish',
-    displayName: 'goldfish',
     canSwim: true,
 };
 
@@ -41,7 +41,7 @@ export const tortoise: Mammal = {
 };
 
 export const animals: ReadonlyArray<Animal> = [
-    albatros,
+    albatross,
     penguin,
     goldfish,
     shark,

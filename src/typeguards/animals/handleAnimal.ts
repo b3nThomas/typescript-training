@@ -4,18 +4,24 @@ import { animals } from './animals';
 const handleAnimal = (animal: Animal) => {
     const { displayName } = animal;
 
-    // Log how many legs if legCount in animal
+    // Log if animal can swim or not
     console.log(`${displayName} ${animal.canSwim ? 'can' : "can't"} swim`);
 
-    // For Bird, log if it can fly or not
+    // Log how many legs if legCount `in` animal
 
-    // Assert and throw if we don't have info about teeth
+    // If `is` Bird, log if it can fly or not
+
+    // `assert` and throw if it's not a mammal
 };
 
 animals.forEach(handleAnimal);
 
-// function validateIsBird (animal: Animal): asserts animal is Extract<Animal, Bird> {
-//     if (animal.__group !== 'Bird') {
-//         throw new Error(`Soz, birds only! ${animal.displayName} is not allowed`);
+// function isBird(animal: Animal): animal is Bird {
+//     return animal.__group === 'Bird';
+// }
+
+// function assertMammal (animal: Animal): asserts animal is Extract<Animal, Mammal> {
+//     if (animal.__group !== 'Mammal') {
+//         throw new Error(`Soz, mammals only! ${animal.displayName} is not allowed`);
 //     }
 // };
