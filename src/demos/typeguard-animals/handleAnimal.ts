@@ -16,7 +16,12 @@ const handleAnimal = (animal: Animal) => {
 
 animals.forEach(handleAnimal);
 
-// function isBird(animal: Animal): animal is Bird {
+/**
+ * Similar to `type casting`, we're essentially telling TS that we know
+ * better when using this. If we make a typo or add another union member
+ * with the same property, it could result in unexpected behaviour.
+ */
+// function isBird(animal: Animal): animal is Bird { // <-------- Type Predicate
 //     return animal.__group === 'Bird';
 // }
 

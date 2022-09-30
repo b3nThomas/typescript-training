@@ -31,5 +31,9 @@
     },
     "lint-staged": {
         "*": "prettier --write"
+    },
+    "dependencies": {
+        "neverthrow": "^5.0.0",
+        "zod": "^3.19.1"
     }
 }

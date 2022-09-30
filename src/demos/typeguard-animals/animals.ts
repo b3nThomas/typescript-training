@@ -1,7 +1,7 @@
 import { Animal, Bird, Fish, Mammal } from './types';
 
 export const albatross: Bird = {
-    __group: 'Bird',
+    __group: 'Bird', // <------- Discriminated Union
     displayName: 'albatross',
     canFly: true,
     canSwim: false,
