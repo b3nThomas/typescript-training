@@ -24,6 +24,8 @@ function assertDate(value: unknown): asserts value is Date {
     else throw new TypeError('value is not Date');
 }
 
+// instanceof Person <---- Check this out
+
 const maybePerson = loadPerson();
 
 assert(maybePerson !== null, 'Could not load person');
