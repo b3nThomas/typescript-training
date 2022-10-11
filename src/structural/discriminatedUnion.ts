@@ -1,8 +1,4 @@
-/**
- * predicate [noun - /ˈprɛdɪkət/]
- * LOGIC
- * something which is affirmed or denied concerning an argument of a proposition.
- */
+/* - Example 1 ----------------------------------------- */
 
 type PowerType = 'Mechanical' | 'Manual';
 
@@ -17,20 +13,20 @@ type ManualVehicle = BaseVehicle<{
     powerAction: 'pedal' | 'row' | 'kick' | 'glide';
 }>;
 
-// const skateboard: ManualVehicle = {
-//     __powerType: 'Manual',
-//     powerAction: 'kick'
-// };
+const skateboard: ManualVehicle = {
+    __powerType: 'Manual',
+    powerAction: 'kick'
+};
 
 type MechanicalVehicle = BaseVehicle<{
     __powerType: 'Mechanical';
     engineType: 'petrol' | 'diesel' | 'hybrid' | 'electric';
 }>;
 
-// const ferrari: MechanicalVehicle = {
-//     __powerType:'Mechanical',
-//     engineType: 'petrol'
-// };
+const ferrari: MechanicalVehicle = {
+    __powerType:'Mechanical',
+    engineType: 'petrol'
+};
 
 type Vehicle = MechanicalVehicle | ManualVehicle;
 
@@ -44,4 +40,33 @@ const handleVehicle = (vehicle: Vehicle) => {
     }
 };
 
-// handleVehicle(skateboard);
+handleVehicle(skateboard);
+
+
+/* - Example 2 ----------------------------------------- */
+
+type Cat = {
+    __kind: 'cat';
+    purrs: true;
+};
+
+type Dog = {
+    __kind: 'dog';
+    woofs: true;
+};
+
+type Snake = {
+    __kind: 'snake';
+    slithers: true;
+}
+
+type Pet = Cat | Dog | Snake;
+
+function getName(pet: Pet) {
+    switch (pet.__kind) {
+        case 'cat':
+            return 'Cat';
+        case 'dog':
+            return 'Dog';
+    }
+}
