@@ -12,10 +12,10 @@ const hasCheese = (text: string): Result<string, CheeseError> => {
     }
 }
 
-const result1 = hasCheese('I love cheddar');
+const result = hasCheese('I love cheddar');
 
-if (result1.isErr()) {
-    console.log(result1.error); // eslint-disable-line
+if (result.isErr()) {
+    console.log(result.error);
 } else {
-    console.log(result1.value); // eslint-disable-line
+    console.log(result.value);
 }

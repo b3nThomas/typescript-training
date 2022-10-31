@@ -18,10 +18,10 @@ const objX = {
 }
 
 objX.double()
-console.log(objX); // eslint-disable-line
+console.log(objX);
 
 objX.half()
-console.log(objX); // eslint-disable-line
+console.log(objX);
 
 /* ----------------------------------------------------------------------------------------------------------------- */
 // Used by React and Vue for state management
