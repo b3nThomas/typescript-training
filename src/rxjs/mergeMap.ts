@@ -3,7 +3,7 @@ import { delay, map, mergeMap, tap } from 'rxjs/operators';
 import chalk from 'chalk';
 
 /**
- * mergeMap is almost like a queue with a one in one out policy
+ * mergeMap is a queue with concurrency control
  */
 
 const source = of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
