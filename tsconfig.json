@@ -14,7 +14,8 @@
         "skipLibCheck": true,
         "strictNullChecks": true,
         "strictBindCallApply": true,
-        "strictPropertyInitialization": true
+        "strictPropertyInitialization": true,
+        "esModuleInterop": true
     },
     "exclude": ["node_modules", ".vscode", "bin", "build"],
     "compileOnSave": true
